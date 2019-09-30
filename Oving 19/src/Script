@@ -1,0 +1,17 @@
+Create table boktittel(
+  isbn varchar(20),
+  forfatter varchar(30),
+  tittel varchar(30),
+  constraint boktittel_pk PRIMARY KEY(isbn)
+);
+
+create table eksemplar(
+  isbn varchar(20),
+  eks_nr integer,
+  laant_av varchar(30),
+  constraint eksemplar_pk primary key (isbn,eks_nr)
+);
+
+ALTER TABLE boktittel
+ADD CONSTRAINT boktittel_fk1 FOREIGN KEY(ibsn)
+    REFERENCES eksemplar(ibsn);
