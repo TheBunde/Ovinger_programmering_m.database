@@ -1,0 +1,23 @@
+public Billett  [] kjøpBilletter(int antØnsk){
+        if(antØnsk + finnAntallSolgteBilletter() > super.getKapasitet()){
+            throw new IllegalArgumentException("Det er ikke plass på tribunen");
+        }
+        if(antØnsk <= 0){
+            throw new IllegalArgumentException("Du må bestille minst 1 billett.");
+        }
+        Billett [] billetter = new Billett[antØnsk];
+        int maxPerRad = 5;
+        for(int i = 0; i < antOpptatt.length; i++){
+            if(antOpptatt[i] + antØnsk <= maxPerRad && antØnsk > 0){
+                int plass = i +1;
+                int rad = antOpptatt[i] + 1;
+                billetter[i] = new SitteplassBillett(getTribunenavn(), getPris(), rad, plass);
+                antOpptatt[i] = antOpptatt[i] + 1;
+                antØnsk--;
+            }
+            if(antØnsk == 0){
+                break;
+            }
+        }
+        return billetter;
+    }

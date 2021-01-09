@@ -1,0 +1,6 @@
+Tribunenavn: Blå. Kapasitet: 20. Pris: 50. Antall solgte billeter: 0. Inntekt: 0
+Tribunenavn: Rød. Kapasitet: 20. Pris: 50. Antall solgte billeter: 0. Inntekt: 0
+
+
+Tribunenavn: Gul. Kapasitet: 20. Pris: 100. Antall solgte billeter: 0. Inntekt: 0
+Tribunenavn: VIP. Kapasitet: 20. Pris: 150. Antall solgte billeter: 0. Inntekt: 0
